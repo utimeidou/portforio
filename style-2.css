@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+/* common */
+
+body {
+  margin: 0;
+  font-family: "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", "メイリオ", 'Meiryo', "MS Pゴシック", "MS PGothic", sans-serif;
+}
+
+h1 {
+  font-size: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h3 {
+  font-family: "ヒラギノ明朝  ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+  font-size:20px;
+  border-bottom: 3px solid;
+  padding-bottom: 4px;
+}
+
+p {
+  margin: 0;
+}
+
+/* header 始まり*/
+header {
+  width: 100%;
+  background: black;
+  height: 400px;
+  background: url(hero_menu.jpg) no-repeat center/cover;
+  position: relative;
+}
+  
+  
+
+h1 {
+  width: 120px;
+  height: 140px;
+  background: white;
+  position: absolute;
+  left: 40px;
+}
+
+header h1 img {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.cacth_copy {
+  font-family: "ヒラギノ明朝  ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  border-bottom: solid 2px;
+  font-weight: bold;
+  white-space:nowrap;
+}
+/* header終わり */
+
+/* nav 始まり */
+nav {
+  display: block;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  /* border: 1px #333; */
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  width: 200px;
+  height: 42px;
+  background: white;
+  text-align: center;
+  line-height: 42px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 380ms;
+}
+
+nav li:hover {
+  background: black;
+  color: white;
+}
+
+li a {
+  display: block;
+  height: 100%;
+  width: 100%
+}
+
+nav li + li {
+  border: solid #333;
+  border-width: 1px 1px 1px 0;
+}
+
+nav li:first-child {
+  border: solid #333;
+  border-width: 1px ;
+}
+/* nav 終わり */
+
+
+/* coffee_drink始まり */
+.coffee_drink {
+  width: 800px;
+  /* background: pink; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+h4 {
+  font-family: "ヒラギノ明朝  ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+  font-size: 28px;
+}
+
+.coffee_drink > p {
+  font-size: 14px;
+  line-height: 1.8em
+}
+
+h3 {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+
+
+.hot {
+  width: calc((100% - 32px)/ 3);
+  /* background: blue; */
+}
+
+.wapper img {
+  width: 100%;
+}
+
+h5 {
+  margin: 0;
+  font-family: "ヒラギノ明朝  ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+  font-size:20px;
+  text-align: left;
+  margin: 18px 0;
+}
+
+.hot > p {
+  font-weight: bold;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.espresso {
+  margin-top: 80px;
+}
+
+table {
+  width: 100%;
+}
+
+.wapper td {
+  font-size: 13px;
+}
+
+.wapper td:first-child {
+  text-align: left;
+}
+
+.wapper td:nth-child(even) {
+  text-align: right;
+}
+
+.wapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+
+
+/* contact footer始まり */
+.contact {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h3 {
+  display: inline-block;
+  color: black;
+  margin-top: 120px;
+} 
+
+
+
+.contact a {
+  display: block;
+  background: white;
+  font-weight: bold;
+  color: #222;
+  width: 360px;
+  padding: 12px 24px;
+  border: solid 2px;
+  margin: 0 auto;
+  transition: background 500ms; ;
+  cursor: pointer;
+}
+
+.contact a:hover {
+  opacity: .5;
+}
+
+footer {
+  width: 800px;
+  font-size: 12px;
+  text-align: center;
+  margin: 80px auto 60px;
+}
+/* contact footer 終わり */
+
+/* ここからメディアクエリ */
+
+@media(max-width: 800px) {
+  .coffee_drink,.contact,footer{
+    width: 500px;
+  }
+
+  nav {
+    width: calc(100% - 16px);
+  }
+  .wapper {
+    display: block;
+  }
+
+  .hot {
+    width: calc(100% - 32px);
+    margin: 0 auto 40px;
+    
+  }
+
+  .coffee_drink > h4,p {
+    text-align: left;
+    width: 100vw;
+  }
+
+
+
+
+}

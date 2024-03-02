@@ -1,0 +1,306 @@
+@charset "utf-8";
+
+/* common */
+
+body {
+  margin: 0;
+  font-family: "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", "メイリオ", 'Meiryo', "MS Pゴシック", "MS PGothic", sans-serif;
+}
+
+h1 {
+  font-size: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h3 {
+  font-family: "ヒラギノ明朝  ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+  font-size:20px;
+  border-bottom: 3px solid;
+  padding-bottom: 4px;
+}
+
+/* header 始まり*/
+header {
+  width: 100%;
+  background: black;
+  height: 400px;
+  background: url(hero_top.jpg) no-repeat center/cover;
+  position: relative;
+}
+  
+
+h1 {
+  width: 120px;
+  height: 140px;
+  background: white;
+  position: absolute;
+  left: 40px;
+}
+
+header h1 img {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.cacth_copy {
+  font-family: "ヒラギノ明朝  ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+  font-size: 50px;
+  padding-bottom: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  border-bottom: solid 3px;
+  font-weight: bold;
+  white-space:nowrap;
+}
+/* header終わり */
+
+/* nav 始まり */
+nav {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  width: 200px;
+  height: 42px;
+  background: white;
+  text-align: center;
+  line-height: 42px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 380ms;
+}
+
+li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+nav li:hover {
+  background: black;
+  color: white;
+}
+
+nav li + li {
+  border: solid #333;
+  border-width: 1px 1px 1px 0;
+}
+
+nav li:first-child {
+  border: solid 1px #333;
+}
+/* nav 終わり */
+
+/* reserveはじまり */
+.reserve {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+h3 {
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 70px;
+  margin-bottom: 32px;
+}
+
+.reserve > p {
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+form {
+  width: 600px;
+  margin: 0 auto;
+  font-size: 14px;
+  /* background: pink; */
+  line-height: 1.8em;
+}
+
+.question {
+  display: block;
+}
+
+.question:before {
+  content: '*必須';
+  color: red;
+  font-size: 11px;
+  position: absolute;
+  left: 488px;
+  top: 700px;
+}
+
+.select-box {
+  margin-top: 60px;
+}
+
+.radio-box ,.check-box ,.name ,.ruby ,.phone ,.address ,.confi ,.content {
+  margin-top: 24px;
+}
+
+
+
+select {
+  display: block;
+  padding: 14px 120px 14px 16px;
+  font-size: 16px;
+
+}
+
+
+.radio:after {
+  content: '*必須';
+  color: red;
+  font-size: 11px;
+  position: absolute;
+  left: 574px;
+  top: 800px;
+}
+
+
+[type="text"] {
+  display: block;
+  width: 600px;
+  height: 52px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.content textarea {
+  display: block;
+  width: 600px;
+  height: 180px;
+}
+
+.ruby-label:after {
+  content: '*必須';
+  color: red;
+  font-size: 11px;
+  position: absolute;
+  left: 433px;
+  top: 1046px;
+}
+
+.name-label:after {
+  content: '*必須';
+  color: red;
+  font-size: 11px;
+  position: absolute;
+  left: 420px;
+  top: 944px;
+}
+
+.phone-label:after {
+  content: '*必須';
+  color: red;
+  font-size: 11px;
+  position: absolute;
+  left: 447px;
+  top: 1148px;
+}
+
+.address-label:after {
+  content: '*必須';
+  color: red;
+  font-size: 11px;
+  position: absolute;
+  left: 476px;
+  top: 1248px;
+}
+
+.confi-label:after {
+  content: '*必須';
+  color: red;
+  font-size: 11px;
+  position: absolute;
+  left: 420px;
+  top: 1348px;
+}
+
+
+textarea {
+  padding: 8px;
+  box-sizing: border-box;
+} 
+
+.content-label:after {
+  content: '*必須';
+  color: red;
+  font-size: 11px;
+  position: absolute;
+  left: 490px;
+  top: 1453px;
+}
+
+.send {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.send > a {
+  display: block;
+  margin: 0 auto;
+  width: 110px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  /* padding: 32px; */
+  color: white;
+  background: black;
+  margin-top: 40px;
+}
+
+
+
+footer {
+  width: 600px;
+  font-size: 11px;
+  margin: 72px auto 56px ;
+  text-align: center;
+}
+
+/* ここからメディアクエリ */
+
+@media(max-width: 800px) {
+  body{
+    width: 100%;
+  }
+  
+
+
+  nav {
+    width: calc(100% - 16px);
+  }
+}
+
+
+
+
+
